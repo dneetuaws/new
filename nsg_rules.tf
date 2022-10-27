@@ -1,4 +1,4 @@
-resource "azurerm_network_security_rule" "example" {
+resource "azurerm_network_security_rule" "Allow-Http-Https" {
   name                        = "Allow-Http-Https"
   priority                    = 100
   direction                   = "Inbound"

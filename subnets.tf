@@ -21,3 +21,11 @@ resource "azurerm_subnet" "subnet-3" {
   address_prefixes     = ["10.26.3.0/24"]
 
 }
+
+resource "azurerm_subnet" "subnet-4" {
+  name                 = "azsubnet-4"
+  resource_group_name  = azurerm_resource_group.devopstf.name
+  virtual_network_name = azurerm_virtual_network.vnet1.name
+  address_prefixes     = ["10.26.4.0/24"]
+
+}
